@@ -92,6 +92,11 @@
             <version>3.4.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>fr.miage.toulouse.rivespilon</groupId>
+            <artifactId>RAuth</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>

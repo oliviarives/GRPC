@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="fichier proto">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/pRAutho.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/pRAutho.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +33,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="38IImUQZH3bTGyz9kUMvRE4bgq1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

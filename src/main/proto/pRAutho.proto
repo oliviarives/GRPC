@@ -2,11 +2,10 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 
-package java;
+package as;
 
 option java_package = "com.proto.annuaire";
 option java_multiple_files = true;
-
 
 enum TypeCR {
   ERROR = 0 ;
