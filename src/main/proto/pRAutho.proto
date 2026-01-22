@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package java;
+
+option java_package = "com.proto.annuaire";
+option java_multiple_files = true;
+
+
+enum TypeCR {
+  ERROR = 0 ;
+  GOOD = 1 ;
+  BAD = 2 ;
+}
+
+
+
+service Authentification {
+
+
+}
+
