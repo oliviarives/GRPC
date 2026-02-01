@@ -42,6 +42,7 @@ message StatutOpe {
 }
 
 //Services
+// Service Manager
 service ASManager {
   rpc Verifier(Identite) returns (StatutPaire);
   rpc Ajouter(Identite) returns (StatutOpe);
@@ -49,7 +50,22 @@ service ASManager {
   rpc ModifierMotDePasse(Identite) returns (StatutOpe);
 }
 
-// Service pour le Checker (Port 28414) - Lecture seule
+// Service Checker
 service ASChecker {
   rpc Verifier(Identite) returns (StatutPaire);
+}
+
+// Journalisation
+message LogRequest {
+  string req = 1; // avec l'enum
+  string login = 2;
+  string resultat = 3; // avec l'enum
+  string client = 4;
+  string heure = 5;
+}
+
+message Empty {} // Réponse vide
+
+service LoggingService {
+  rpc log(LogRequest) returns (Empty);
 }

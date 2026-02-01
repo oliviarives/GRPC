@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class ManagerClient {
     public static void main(String[] args) {
-        // Connexion au port 28415 (Port dédié au Manager)
+        // on crée la connexion au port 28415 (Port dédié au Manager)
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 28415)
                 .usePlaintext()
                 .build();
 
-        // On crée un stub "Manager" (accès complet)
+        // on crée un stub du client manager
         ASManagerGrpc.ASManagerBlockingStub stub = ASManagerGrpc.newBlockingStub(channel);
         Scanner sc = new Scanner(System.in);
 
