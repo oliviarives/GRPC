@@ -10,13 +10,18 @@ message Identite {
 }
 
 // enum des statuts de vérification
-enum StatutVerification {
-  ERROR = 0; // Compte rendu négatif
+enum StatutVerificationPaire {
   GOOD = 1; // Réponse à vérification d'une paire
   BAD = 2; // Réponse à vérification d'une paire
+}
+
+// enum des statuts de vérification
+enum StatutVerificationOpe {
+  ERROR = 0; // Compte rendu négatif
   DONE = 3; // Compte rendu positif d’opération (ADD, DEL ou MOD)
   MOD = 4; // modifier
   DEL = 5; //supprimer
+  ADD = 6; //ajouter
 }
 
 // message Réponse positive de validation
@@ -25,5 +30,5 @@ enum StatutVerification {
 // message Réponse négative d'ajout, modification ou suppression
 
 message Statut {
-  StatutVerification = 0;
+  StatutVerificationPaire = 0;
 }
