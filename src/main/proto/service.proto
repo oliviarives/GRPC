@@ -9,5 +9,4 @@ service ServiceAuthentification {
   rpc Ajouter(Identite) returns (StatutOpe);
   rpc Supprimer(Identite) returns (StatutOpe);
   rpc ModifierMotDePasse(Identite) returns (StatutOpe);
-
 }

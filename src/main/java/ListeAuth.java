@@ -1,10 +1,3 @@
-package as;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -33,7 +26,7 @@ public class ListeAuth {
     }
 
     /**
-     * crÃ©ation d'un couple (login, mot de passe)
+     * creation d'un couple (login, mot de passe)
      * @param login : le login
      * @param passwd : le mot de passe
      * @return true si Ã§a c'est bien passÃ©

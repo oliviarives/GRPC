@@ -26,13 +26,11 @@ enum StatutVerificationOpe {
 
 // message Réponse positive de validation
 // message Réponse négative de validation
-// message Réponse positive d'ajout, modification ou suppression
-// message Réponse négative d'ajout, modification ou suppression
-
 message StatutPaire {
-  StatutVerificationPaire = 0;
+  StatutVerificationPaire statut = 1;
 }
 
+// message Réponse positive d'ajout, modification ou suppression
 message StatutOpe {
-  StatutVerificationOpe = 0;
+  StatutVerificationOpe statut = 1;
 }

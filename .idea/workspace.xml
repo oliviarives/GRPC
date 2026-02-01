@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="message.proto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListeAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListeAuth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/message.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/message.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/service.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,9 @@
     &quot;accountId&quot;: &quot;2830e824-3ae0-40e9-b583-af6fa67d8178&quot;
   }
 }</component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -127,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769965847507</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="message.proto">
+      <option name="closed" value="true" />
+      <created>1769965976430</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769965976430</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
