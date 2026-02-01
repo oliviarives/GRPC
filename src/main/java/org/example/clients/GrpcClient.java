@@ -6,8 +6,8 @@ import io.grpc.ManagedChannelBuilder;
 
 public class GrpcClient {
     public static void main(String[] args) {
-        // on créée le canal de communication vers localhost:50051
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051)
+        // on créée le canal de communication vers localhost:28414
+        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 28414)
                 .usePlaintext()
                 .build();
 

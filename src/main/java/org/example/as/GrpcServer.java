@@ -7,12 +7,12 @@ import java.io.IOException;
 
 public class GrpcServer {
     public static void main(String[] args) throws IOException, InterruptedException {
-        // on lance le serveur sur le port 50051
-        Server server = ServerBuilder.forPort(50051)
+        // on lance le serveur sur le port 28414
+        Server server = ServerBuilder.forPort(28414)
                 .addService(new AuthServiceImpl()) // on attache notre service au port
                 .build();
 
-        System.out.println("Démarrage du serveur gRPC sur le port 50051...");
+        System.out.println("Démarrage du serveur gRPC sur le port 28414...");
         server.start();
 
         server.awaitTermination();
