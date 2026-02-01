@@ -1,5 +1,11 @@
 syntax = "proto3";
 
+package grpc.auth;
+
+option java_multiple_files = true;
+option java_package = "com.proto.auth";
+option java_outer_classname = "AuthProto";
+
 // message Test de la validité d'une paire
 // message Ajout d'une paire
 // message Modification du mot de passe d'une paire
@@ -33,4 +39,11 @@ message StatutPaire {
 // message Réponse positive d'ajout, modification ou suppression
 message StatutOpe {
   StatutVerificationOpe statut = 1;
+}
+
+service ServiceAuthentification {
+  rpc Verifier(Identite) returns (StatutPaire);
+  rpc Ajouter(Identite) returns (StatutOpe);
+  rpc Supprimer(Identite) returns (StatutOpe);
+  rpc ModifierMotDePasse(Identite) returns (StatutOpe);
 }

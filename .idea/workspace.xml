@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="message.proto">
+    <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="modif solution erreur message.proto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GrpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListeAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListeAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListeAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ListeAuth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/message.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/message.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/service.proto" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +62,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GrpcClient.executor": "Run",
+    "Application.GrpcServer.executor": "Run",
     "Application.ListeAuth.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -140,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769965976430</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modif solution erreur message.proto">
+      <option name="closed" value="true" />
+      <created>1769966362274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769966362274</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +177,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="alimenter message.proto" />
     <MESSAGE value="message.proto" />
-    <option name="LAST_COMMIT_MESSAGE" value="message.proto" />
+    <MESSAGE value="modif solution erreur message.proto" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif solution erreur message.proto" />
   </component>
 </project>
