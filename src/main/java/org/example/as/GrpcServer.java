@@ -7,17 +7,12 @@ import java.io.IOException;
 
 public class GrpcServer {
     public static void main(String[] args) throws IOException, InterruptedException {
-        // Instance unique de la base de données partagée entre les deux services
         ListeAuth database = new ListeAuth();
 
-        //Démarrage du Serveur MANAGER (Port 28415)
-        // Il utilise la classe ASManagerImpl
         Server serverManager = ServerBuilder.forPort(28415)
                 .addService(new ASManagerImpl(database))
                 .build();
 
-        //Démarrage du Serveur CHECKER (Port 28414)
-        // Il utilise la classe ASCheckerImpl
         Server serverChecker = ServerBuilder.forPort(28414)
                 .addService(new ASCheckerImpl(database))
                 .build();

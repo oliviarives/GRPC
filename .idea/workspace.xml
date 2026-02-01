@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="pom.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clients/TestLogClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/log/LogServer.java" afterDir="false" />
+    <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clients/ManagerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clients/ManagerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/message.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/message.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/as/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/as/GrpcServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769969604732</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="log">
+      <option name="closed" value="true" />
+      <created>1769970481386</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1769970481386</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +238,7 @@
     <MESSAGE value="séparation des deux service GRPC checker et manager" />
     <MESSAGE value="c'est good manager + CheckerClient" />
     <MESSAGE value="pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml" />
+    <MESSAGE value="log" />
+    <option name="LAST_COMMIT_MESSAGE" value="log" />
   </component>
 </project>
