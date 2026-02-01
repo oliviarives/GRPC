@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class ManagerClient {
     public static void main(String[] args) {
-        // Connexion au port 28415 (Port dédié au Manager)
+        // Connexion au port 28415 (utilisé pour le Manager)
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 28415)
                 .usePlaintext()
                 .build();
 
-        // On crée un stub "Manager" (accès complet)
+        // On crée un stub "Manager"
         ASManagerGrpc.ASManagerBlockingStub stub = ASManagerGrpc.newBlockingStub(channel);
         Scanner sc = new Scanner(System.in);
 
@@ -39,19 +39,19 @@ public class ManagerClient {
             Identite id = Identite.newBuilder().setLogin(login).setMdp(mdp).build();
 
             switch (choix) {
-                case 1: // Check
+                case 1: // CHECK
                     StatutPaire resCheck = stub.verifier(id);
                     System.out.println(">>> Résultat : " + resCheck.getStatut());
                     break;
-                case 2: // Add
+                case 2: // ADD
                     StatutOpe resAdd = stub.ajouter(id);
                     System.out.println(">>> Ajout : " + resAdd.getStatut());
                     break;
-                case 3: // Update
+                case 3: // MOD
                     StatutOpe resMod = stub.modifierMotDePasse(id);
                     System.out.println(">>> Modif : " + resMod.getStatut());
                     break;
-                case 4: // Delete
+                case 4: // DEL
                     StatutOpe resDel = stub.supprimer(id);
                     System.out.println(">>> Suppression : " + resDel.getStatut());
                     break;
