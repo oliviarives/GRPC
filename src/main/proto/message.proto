@@ -5,14 +5,14 @@ syntax = "proto3";
 // message Modification du mot de passe d'une paire
 // message Suppression d'une paire
 message Identite {
-  string login = 0;
+  string login = 2;
   string mdp = 1;
 }
 
 // enum des statuts de vérification
 enum StatutVerificationPaire {
-  GOOD = 1; // Réponse à vérification d'une paire
-  BAD = 2; // Réponse à vérification d'une paire
+  GOOD = 0; // Réponse à vérification d'une paire
+  BAD = 1; // Réponse à vérification d'une paire
 }
 
 // enum des statuts de vérification
@@ -29,6 +29,10 @@ enum StatutVerificationOpe {
 // message Réponse positive d'ajout, modification ou suppression
 // message Réponse négative d'ajout, modification ou suppression
 
-message Statut {
+message StatutPaire {
   StatutVerificationPaire = 0;
+}
+
+message StatutOpe {
+  StatutVerificationOpe = 0;
 }
