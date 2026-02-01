@@ -1,7 +1,36 @@
 syntax = "proto3";
 
-import "google/protobuf/empty.proto";
+package rauth.auth;
 
+//option java_package = "com.rauth.proto.auth";
+option java_multiple_files = true;
+
+message couple {
+  string login = 1;
+  string password = 2;
+}
+
+message Identifiant {
+  string login = 1;
+}
+
+
+enum StatutVerification {
+  ERROR = 0;
+  GOOD = 1;
+  BAD = 2;
+  DONE = 3;
+
+}
+
+message ReponseVerification {
+  StatutVerification statut = 1;
+}
+
+message RequeteModificationMotDePasse {
+  string login = 1;
+  string nouveau_mot_de_passe = 2;
+}
 package as;
 
 option java_package = "com.proto.annuaire";
@@ -17,5 +46,14 @@ enum TypeCR {
 service Authentification {
 
 
+
+message ReponseSimple {
+  bool succes = 1;
 }
 
+service ServiceAuthentification {
+  rpc Verifier(couple) returns (ReponseVerification) {};
+  rpc Ajouter(couple)returns (ReponseSimple){};
+  rpc Supprimer(couple) returns (ReponseSimple){};
+  rpc ModifierMotDePasse(RequeteModificationMotDePasse) returns (ReponseSimple){};
+}
