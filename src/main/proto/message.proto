@@ -1,2 +1,29 @@
 syntax = "proto3";
 
+// message Test de la validité d'une paire
+// message Ajout d'une paire
+// message Modification du mot de passe d'une paire
+// message Suppression d'une paire
+message Identite {
+  string login = 0;
+  string mdp = 1;
+}
+
+// enum des statuts de vérification
+enum StatutVerification {
+  ERROR = 0; // Compte rendu négatif
+  GOOD = 1; // Réponse à vérification d'une paire
+  BAD = 2; // Réponse à vérification d'une paire
+  DONE = 3; // Compte rendu positif d’opération (ADD, DEL ou MOD)
+  MOD = 4; // modifier
+  DEL = 5; //supprimer
+}
+
+// message Réponse positive de validation
+// message Réponse négative de validation
+// message Réponse positive d'ajout, modification ou suppression
+// message Réponse négative d'ajout, modification ou suppression
+
+message Statut {
+  StatutVerification = 0;
+}
