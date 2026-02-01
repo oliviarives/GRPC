@@ -43,7 +43,7 @@ public class ASManagerImpl extends ASManagerGrpc.ASManagerImplBase {
         renvoyerReponse(succes, responseObserver);
     }
 
-    // Méthode privée pour éviter la répétition de code
+    //Méthode privée pour éviter la répétition de code
     private void renvoyerReponse(boolean succes, StreamObserver<StatutOpe> responseObserver) {
         StatutVerificationOpe statut = succes ? StatutVerificationOpe.DONE : StatutVerificationOpe.ERROR;
 

@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class CheckerClient {
     public static void main(String[] args) {
-        // Connexion au port 28414 (Port dédié au Checker)
+        // Connexion au port 28414 (utilisé pour le Checker)
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 28414)
                 .usePlaintext()
                 .build();
 
-        // On crée un stub "Checker" (lecture seule)
+        // On crée un stub "Checker"
         ASCheckerGrpc.ASCheckerBlockingStub stub = ASCheckerGrpc.newBlockingStub(channel);
         Scanner sc = new Scanner(System.in);
 
