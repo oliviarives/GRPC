@@ -1,4 +1,4 @@
-package org.example;
+package org.example.as;
 
 import com.proto.auth.*;
 import io.grpc.stub.StreamObserver;

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.clients;
 
 import com.proto.auth.*;
 import io.grpc.ManagedChannel;

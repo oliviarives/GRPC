@@ -1,4 +1,4 @@
-package org.example;
+package org.example.as;
 
 import java.util.HashMap;
 import java.util.Scanner;

@@ -1,7 +1,8 @@
-package org.example;
+package org.example.as;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+
 import java.io.IOException;
 
 public class GrpcServer {
