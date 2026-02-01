@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="modification du numero de port">
-      <change beforePath="$PROJECT_DIR$/src/main/proto/message.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/message.proto" afterDir="false" />
+    <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="séparation des deux service GRPC checker et manager">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/as/ASCheckerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/as/ASManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clients/CheckerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clients/ManagerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/as/AuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/as/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/as/GrpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clients/GrpcClient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769968150277</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="séparation des deux service GRPC checker et manager">
+      <option name="closed" value="true" />
+      <created>1769968407791</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1769968407791</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +214,7 @@
     <MESSAGE value="modif solution erreur message.proto" />
     <MESSAGE value="ajout AuthServiceImpl.java , GrpcClient.java et GrpcServer.java" />
     <MESSAGE value="modification du numero de port" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification du numero de port" />
+    <MESSAGE value="séparation des deux service GRPC checker et manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="séparation des deux service GRPC checker et manager" />
   </component>
 </project>
