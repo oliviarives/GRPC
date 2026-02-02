@@ -17,10 +17,10 @@ public class CheckerClient {
         ASCheckerGrpc.ASCheckerBlockingStub stub = ASCheckerGrpc.newBlockingStub(channel);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== CLIENT CHECKER (Port 28414) ===");
+        System.out.println("CLIENT CHECKER");
 
         while (true) {
-            System.out.println("\nEntrez un login à vérifier (ou 'exit' pour quitter) :");
+            System.out.println("\nEntrez un login à vérifier :");
             String login = sc.next();
 
             if (login.equalsIgnoreCase("exit")) break;
@@ -37,9 +37,9 @@ public class CheckerClient {
             // Appel gRPC
             try {
                 StatutPaire reponse = stub.verifier(identite);
-                System.out.println(">>> Résultat du serveur : " + reponse.getStatut());
+                System.out.println("Résultat du serveur : " + reponse.getStatut());
             } catch (Exception e) {
-                System.err.println("Erreur : Impossible de contacter le serveur (Vérifiez le port 28414)");
+                System.err.println("Erreur : Impossible de contacter le serveur \nVérifiez le port 28414");
             }
         }
 

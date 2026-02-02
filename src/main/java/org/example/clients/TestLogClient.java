@@ -15,7 +15,7 @@ public class TestLogClient {
 
         LoggingServiceGrpc.LoggingServiceBlockingStub stub = LoggingServiceGrpc.newBlockingStub(channel);
 
-        System.out.println("Envoi d'un log de test...");
+        System.out.println("Envoi d'un log de test");
 
         // on créé un faux log
         LogRequest log = LogRequest.newBuilder()
