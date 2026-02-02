@@ -23,7 +23,7 @@ public class GrpcServer {
         System.out.println("Serveur MANAGER démarré sur le port 28415");
         System.out.println("Serveur CHECKER démarré sur le port 28414");
 
-        //Attente de l'arrêt
+        // attenedt de l'arrêt
         serverManager.awaitTermination();
         serverChecker.awaitTermination();
     }

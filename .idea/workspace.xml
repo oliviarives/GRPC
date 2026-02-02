@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c712744a-638a-4e6e-81b4-00b18e09e991" name="Changes" comment="log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clients/CheckerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clients/CheckerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clients/TestLogClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clients/TestLogClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/as/ASManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/as/ASManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/as/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/as/GrpcServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
     "Application.CheckerClient.executor": "Run",
     "Application.GrpcClient.executor": "Run",
     "Application.GrpcServer.executor": "Run",
+    "Application.GrpcServer_v3_0.executor": "Run",
     "Application.ListeAuth.executor": "Run",
     "Application.LogServer.executor": "Run",
     "Application.Main.executor": "Run",
@@ -79,6 +80,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.as_v3" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -223,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769970597024</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="log">
+      <option name="closed" value="true" />
+      <created>1770048710054</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1770048710054</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -13,7 +13,6 @@ public class ASManagerImpl extends ASManagerGrpc.ASManagerImplBase {
 
     @Override
     public void verifier(Identite request, StreamObserver<StatutPaire> responseObserver) {
-        // Le manager peut aussi vérifier
         boolean isValide = listeAuth.tester(request.getLogin(), request.getMdp());
 
         responseObserver.onNext(StatutPaire.newBuilder()
@@ -43,7 +42,6 @@ public class ASManagerImpl extends ASManagerGrpc.ASManagerImplBase {
         renvoyerReponse(succes, responseObserver);
     }
 
-    //Méthode privée pour éviter la répétition de code
     private void renvoyerReponse(boolean succes, StreamObserver<StatutOpe> responseObserver) {
         StatutVerificationOpe statut = succes ? StatutVerificationOpe.DONE : StatutVerificationOpe.ERROR;
 

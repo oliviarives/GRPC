@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class CheckerClient {
     public static void main(String[] args) {
-        // Connexion au port 28414 (utilisé pour le Checker)
+        // connexion au port 28414
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 28414)
                 .usePlaintext()
                 .build();
 
-        // On crée un stub "Checker"
+        // on crée un stub "Checker"
         ASCheckerGrpc.ASCheckerBlockingStub stub = ASCheckerGrpc.newBlockingStub(channel);
         Scanner sc = new Scanner(System.in);
 
@@ -28,13 +28,12 @@ public class CheckerClient {
             System.out.println("Entrez le mot de passe :");
             String mdp = sc.next();
 
-            // Création de la requête
+            // on créé la requête
             Identite identite = Identite.newBuilder()
                     .setLogin(login)
                     .setMdp(mdp)
                     .build();
 
-            // Appel gRPC
             try {
                 StatutPaire reponse = stub.verifier(identite);
                 System.out.println("Résultat du serveur : " + reponse.getStatut());

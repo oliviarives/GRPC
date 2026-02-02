@@ -31,7 +31,7 @@ public class LogServer {
             System.out.println(" User   : " + request.getLogin());
             System.out.println(" Statut : " + request.getResultat());
 
-            // Réponse vide
+            // réponse vide
             responseObserver.onNext(Empty.newBuilder().build());
             responseObserver.onCompleted();
         }
